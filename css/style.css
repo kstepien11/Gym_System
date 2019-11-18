@@ -1,0 +1,302 @@
+* {
+	box-sizing: border-box;
+}
+
+body {
+	font-family: Verdana, Arial, sans-serif;
+	color: white;
+}
+
+h1 {
+	margin-top: 20px;
+}
+
+#container {
+    position: relative;
+    margin-left: auto;
+    margin-right: auto;
+	
+	max-width: 95%;
+	min-height: auto;
+    
+    -webkit-box-shadow: 15px 15px 5px 0px rgba(33, 15, 15, 0.46);
+    -moz-box-shadow: 15px 15px 5px 0px rgba(33, 15, 15, 0.46);
+    box-shadow: 5px 5px 5px 0px rgba(33, 15, 15, 0.46);  
+    
+    border-radius: 10px;
+}
+
+
+#header {
+    width: 100%;
+	background: #546B97 ; /*blue*/
+    height: 150px;	
+	color: 000;
+	position: relative;    
+    border: 2px black solid;   
+    margin-bottom: 5px;    
+    border-radius: 10px 10px 0 0;
+}
+#img {
+  width: 10%;
+  float:left;
+}
+
+#cctext {
+	display: inline-block;
+	position: absolute;
+	right: 10px;
+}
+
+#signin {
+	display: inline-block;
+	position: relative;
+	right: 10px;
+	top: 10px;
+}
+
+#signout {
+	display: inline-block;
+	position: absolute;
+	right: 10px;
+	top: 10px;
+	font-weight: bold;
+	font-size: 20px;
+}
+
+#header h1 {
+	color: fff;
+	position: absolute;
+	left: 30px;
+	top: 35px;
+}
+
+.button {
+  background-color: #175B5F; /* Green */
+  border: none;
+  color: white;
+  padding: 10px 15px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  
+}
+.button:hover {background-color: #546B97;}
+
+#menu {
+    width: 100%;
+    height: auto;
+    
+    background-color: #c5ffff;
+    
+    border: 2px black solid;
+    
+    margin-bottom: 5px;
+}
+
+#content {
+	box-sizing: border-box;
+    width: 100%;
+    height: auto;  
+	min-height: 600px;
+    background-color: #333;    
+    padding: 5px 10px 0px 10px;
+    border: 2px black solid;
+    margin-bottom: 5px;
+}
+
+#content  h1{
+	color: fff;
+	font-size: 150%;
+	position: relative;
+	margin-left: 20px;
+	top: 10px;
+}
+#content  h2{
+	font-size: 110%;
+	margin-left: 20px;
+	color: fff;
+	position: relative;
+	
+}
+
+#content p{
+	color: fff;
+	position: relative;
+	margin-left: 20px;
+	margin-right: 15px;
+	margin-top: 5px;
+}
+
+#content span{
+	left: 40px;
+	top: 10px;
+}
+
+
+#youtube{
+	text-align: center;
+}
+
+.userDetailsContent{
+	margin: auto;
+	width: 80%;
+	padding: 10px;
+}
+#content2{
+	display:none;
+}
+
+#footer {
+	position: relative;
+    width: 100%;
+    height: 30px;
+    background-color: #175B5F;
+    padding: 5px;
+
+    border: 2px black solid; 
+    
+    border-radius: 0 0 10px 10px;
+}
+
+.twoColForm  td:first-child {
+	text-align: right;
+}
+
+
+#table {
+  font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
+  border-collapse: collapse;  
+  width: 100%;
+}
+
+#table td, #table th {
+  border: 1px solid #ddd;
+  padding: 8px;
+}
+
+
+#table tr:hover {background-color: #175B5F;}
+
+#table th {
+  padding-top: 12px;
+  padding-bottom: 12px;
+  text-align: left;
+  background-color: #546B97;
+  color: white;
+}
+
+/* input forms*/
+input[type=text], select, textarea {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  resize: vertical;
+}
+input[type=password], select, textarea {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  resize: vertical;
+}
+
+label {
+  padding: 12px 12px 12px 0;
+  display: inline-block;
+}
+
+input[type=submit] {
+  background-color: #175B5F; /* Green */
+  border: none;
+  color: white;
+  padding: 10px 15px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  float:right;
+  margin: 10px 0px 0px 10px;
+}
+
+input[type=submit]:hover {
+  background-color: #546B97;  
+  border: 1px solid #ccc;
+}
+
+.container {
+  border-radius: 5px;
+  background-color: #f2f2f2;
+  padding: 20px;
+}
+
+.col-25 {
+  float: left;
+  width: 25%;
+  margin-top: 6px;
+}
+
+.col-75 {
+  float: left;
+  width: 75%;
+  margin-top: 6px;
+}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Responsive layout - when the screen is less than 600px wide, make the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 600px) {
+  .col-25, .col-75, input[type=submit] {
+    width: 100%;
+    margin-top: 0;
+  }
+}
+
+/*Tooltips style*/
+/* Tooltip container */
+.tooltip {
+  position: relative;
+  float:right;
+  display: inline-block;
+}
+
+/* Tooltip text */
+.tooltip .tooltiptext {
+  width: 180px;
+  top: 100%;
+  left: 10%;
+  margin-left: 60px; /* Use half of the width (120/2 = 60), to center the tooltip */
+}
+
+/* Tooltip arrow */
+.tooltip .tooltiptext {
+  visibility: hidden;
+  width: 200px;
+  background-color: black;
+  color: #fff;
+  text-align: center;
+  border-radius: 6px;
+  padding: 5px 0;
+  
+  /* Position the tooltip */
+  position: absolute;
+  z-index: 1;
+  top: 100%;
+  left: 10%;
+  margin-left: -220px;
+  margin-top: 20px;
+}
+
+/* Show the tooltip text when you mouse over the tooltip container */
+.tooltip:hover .tooltiptext {
+  visibility: visible;
+  opacity: 1;
+} 
+

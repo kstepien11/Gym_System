@@ -1,0 +1,49 @@
+
+
+* {
+	box-sizing: border-box;
+}
+
+
+h1 {
+	margin-top: 1px;
+}
+
+/*changing the background color and font size when changing the screen resolution under 1000px*/
+@media screen and (max-width: 1000px) {
+	body {
+		background-color: #333;
+	}
+	
+	h1 {
+		font-size: 120%;
+	}
+}
+/*changing the background color and font size when changing the screen resolution under 700px*/
+@media screen and (max-width: 700px) {
+	body {
+		background-color: #533;
+	}
+	
+	h1 {
+		font-size: 110%;
+	}
+	
+	#container {
+		border: 2px solid black;
+	}
+}
+/*changing the background color and font size when changing the screen resolution under 400px and adding border to the container*/
+@media screen and (max-width: 400px) {
+	body {
+		background-color: #233;
+	}
+
+	h1 {
+		font-size: 100%;
+	}
+
+	#container {
+		border: 1px solid #f33;
+	}
+}
